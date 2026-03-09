@@ -52,7 +52,7 @@ This project helps job seekers streamline their job applications by generating h
 
 # 🏗 System Architecture
 
-![ERROR](assests/error.png)
+![DIAGRAM](assests/diagram.png)
 
 ---
 
@@ -85,8 +85,8 @@ Personalized-Cover-Letter-Generator/PCV
 Clone the repository
 
 ```bash
-git clone https://github.com/HARSHINISHIRI/Personalized-Cover-Letter-Generator.git
-cd Personalized-Cover-Letter-Generator
+git clone https://github.com/HARSHINISHIRI/Personalized-Cover-Letter-Generator--PCV.git
+cd Personalized-Cover-Letter-Generator--PCV
 ````
 
 Install dependencies
