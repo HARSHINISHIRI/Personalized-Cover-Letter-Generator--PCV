@@ -1,63 +1,123 @@
-# Personalized-Cover-Letter-Generator---Infosys-Intern
-**PCV (Personalized Cover Letter Generator)** is an AI-powered tool that analyzes resumes and job descriptions to create tailored cover letters. Built with Python and Streamlit, it helps job seekers quickly generate professional application documents.
 
+# PCV – Personalized Cover Letter Generator
 
-The objective of this project is to simplify the job application process by enabling users to quickly produce high-quality, role-specific cover letters.
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![Streamlit](https://img.shields.io/badge/Framework-Streamlit-red)
+![OCR](https://img.shields.io/badge/OCR-PaddleOCR-green)
+![License](https://img.shields.io/badge/License-MIT-yellow)
 
----
+PCV (Personalized Cover Letter Generator) is an AI-powered application that automates the process of creating professional and customized cover letters. The system analyzes a candidate’s resume along with a job description and generates a tailored cover letter aligned with the employer’s requirements and the applicant’s skills.
 
-## 🚀 Features
-
-- **Resume Text Extraction**
-  - Extracts text from uploaded resumes using Optical Character Recognition (OCR).
-
-- **AI-Powered Cover Letter Generation**
-  - Generates professional and personalized cover letters based on resume content and job descriptions.
-
-- **Job Description Analysis**
-  - Identifies key skills, qualifications, and responsibilities to tailor the cover letter.
-
-- **Interactive Web Interface**
-  - Built with Streamlit to provide a simple and user-friendly interface.
-
-- **PDF Export**
-  - Allows users to export generated cover letters in professional PDF format.
-
-- **Chat History Support**
-  - Maintains previous generated responses for reference.
-
-- **Efficient Workflow**
-  - Reduces the time required to prepare personalized job application documents.
+This project helps job seekers streamline their job applications by generating high-quality, role-specific cover letters quickly and efficiently.
 
 ---
 
-## 🛠️ Technology Stack
+# 🚀 Features
 
-- **Programming Language:** Python  
-- **Framework:** Streamlit  
-- **OCR Engine:** PaddleOCR  
-- **Image Processing:** PIL (Python Imaging Library)  
-- **PDF Generation:** FPDF  
-- **AI Model Integration:** Ollama (llama model,Phi Model) - Model depends on System Requirement
+- 📄 **Resume Text Extraction**
+  - Extracts resume content using Optical Character Recognition (OCR).
+
+- 🤖 **AI Cover Letter Generation**
+  - Generates personalized cover letters using AI models.
+
+- 📊 **Job Description Analysis**
+  - Identifies relevant skills and qualifications from job descriptions.
+
+- 🌐 **Interactive Web Interface**
+  - Built with Streamlit for a simple and user-friendly experience.
+
+- 📥 **PDF Export**
+  - Allows users to download generated cover letters in professional PDF format.
+
+- 🧠 **Chat History Support**
+  - Stores previously generated cover letters for reference.
+
+- ⚡ **Efficient Workflow**
+  - Reduces manual effort in preparing job application documents.
 
 ---
 
-## ⚙️ Installation
+# 🛠️ Technology Stack
 
-Clone the repository:
+| Technology | Purpose |
+|-----------|--------|
+| Python | Core programming language |
+| Streamlit | Web interface |
+| PaddleOCR | Resume text extraction |
+| PIL | Image processing |
+| FPDF | PDF generation |
+| Ollama (Phi Model) | AI text generation |
 
-```bash
-git clone https://github.com/your-username/PCV.git
-cd PCV
+---
+
+# 🏗 System Architecture
+
+```
+
+User Input
+│
+▼
+Upload Resume + Enter Job Description
+│
+▼
+OCR Processing (PaddleOCR)
+│
+▼
+Text Extraction
+│
+▼
+AI Model Processing (Ollama / Phi)
+│
+▼
+Generate Personalized Cover Letter
+│
+▼
+Display Result + Export PDF
+
+```
+
+---
+
+# 📂 Project Structure
+
+```
+
+INFO-INTERN/
+│
+├── app.py
+├── requirements.txt
+├── cv_chats_ollama.json
+│
+├── assets/
+│   └── images
+│
+├── modules/
+│   ├── ocr_processing.py
+│   ├── pdf_generator.py
+│   └── ai_generator.py
+│
+└── README.md
+
 ````
 
-Install dependencies:
+---
+
+# ⚙️ Installation
+
+Clone the repository
+
+```bash
+git clone https://github.com/HARSHINISHIRI/Personalized-Cover-Letter-Generator.git
+cd Personalized-Cover-Letter-Generator
+````
+
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Run the application:
+Run the application
 
 ```bash
 streamlit run app.py
@@ -65,38 +125,42 @@ streamlit run app.py
 
 ---
 
-## 📌 Usage
+# 📌 Usage
 
-1. Launch the application using Streamlit.
+1. Start the Streamlit application.
 2. Upload your resume.
-3. Enter the job description.
+3. Upload the job description.
 4. Generate a personalized cover letter.
-5. Download the cover letter in PDF format.
+5. Download the cover letter as a PDF.
 
 ---
 
-## 🔮 Future Enhancements
+# 🖼 Screenshots
+
+*Add screenshots of your application here.*
+
+Example:
+
+```
+screenshots/homepage.png
+screenshots/generated_cover_letter.png
+```
+
+---
+
+# 🔮 Future Improvements
 
 * Multi-language support
-* ATS optimization suggestions
+* ATS compatibility scoring
+* Resume skill gap analysis
 * Integration with job portals
-* Cloud deployment support
-* Resume skill analysis
+* Cloud deployment
 
 ---
 
-## 📄 License
+# 📄 License
 
 This project is developed for educational and research purposes.
 
-```
-
-✅ This format will **render nicely on GitHub with headings, icons, and sections**.
-
-If you want, I can also give you a **🔥 “impressive GitHub README” version** with:
-- GitHub **badges**
-- **project architecture diagram**
-- **folder structure**
-- **screenshots section** (makes recruiters impressed).
 ```
 
