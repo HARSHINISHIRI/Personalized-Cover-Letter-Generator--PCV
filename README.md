@@ -58,7 +58,6 @@ This project helps job seekers streamline their job applications by generating h
 
 # 📂 Project Structure
 
-```
 
 Personalized-Cover-Letter-Generator/PCV
 │
@@ -76,7 +75,6 @@ Personalized-Cover-Letter-Generator/PCV
 │
 └── README.md
 
-````
 
 ---
 
